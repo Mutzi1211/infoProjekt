@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=Block
+comment1.params=ID
+comment1.target=Block(int)
+comment2.params=
+comment2.target=void\ act()
+comment3.params=gfx
+comment3.target=void\ Setgfx(int)
+numComments=4
