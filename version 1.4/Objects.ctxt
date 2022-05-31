@@ -1,0 +1,27 @@
+#BlueJ class context
+comment0.target=Objects
+comment0.text=\r\n\ Animal.\ This\ is\ the\ base\ class\ for\ all\ animals.\ In\ addition\ to\ the\ standard\ Actor\r\n\ methods,\ it\ provides\ the\ ability\ to\ move\ and\ turn.\r\n\ \r\n\ @author\ Michael\ Kolling\r\n\ @version\ 1.0\r\n
+comment1.params=
+comment1.target=Objects()
+comment1.text=\r\n\ Constructor\ for\ Animal\ -\ nothing\ to\ do.\r\n
+comment2.params=
+comment2.target=void\ act()
+comment2.text=\r\n\ Act\ -\ empty\ method.\ Animals\ have\ no\ default\ action.\r\n
+comment3.params=angle
+comment3.target=void\ turn(int)
+comment3.text=\r\n\ Turn\ 'angle'\ degrees\ towards\ the\ right\ (clockwise).\r\n
+comment4.params=speed_x\ speed_y
+comment4.target=void\ movexy(double,\ double)
+comment4.text=\r\n\ Move\ with\ the\ desired\ values\ (speed\ maths)\r\n
+comment5.params=
+comment5.target=void\ move()
+comment5.text=\r\n\ Move\ forward\ in\ the\ current\ direction.\r\n
+comment6.params=Speed
+comment6.target=void\ move(double)
+comment6.text=\r\n\ Move\ forward\ in\ the\ current\ direction\ with\ a\ defined\ step.\r\n
+comment7.params=
+comment7.target=boolean\ atWorldEdge()
+comment7.text=\r\n\ Test\ if\ we\ are\ close\ to\ one\ of\ the\ edges\ of\ the\ world.\ Return\ true\ is\ we\ are.\r\n
+comment8.params=limit
+comment8.target=void\ SetSpeedLimit(int)
+numComments=9
