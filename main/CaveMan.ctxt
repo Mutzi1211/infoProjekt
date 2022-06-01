@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=CaveMan
+comment1.params=
+comment1.target=CaveMan()
+comment1.text=\r\n\ Create\ the\ crab\ world\ (the\ beach).\ Our\ world\ has\ a\ size\ \r\n\ of\ 5600x5600\ cells,\ where\ every\ cell\ is\ just\ 1\ pixel.\r\n
+comment2.params=num
+comment2.target=void\ GenerateLevel(int)
+comment3.params=
+comment3.target=void\ act()
+comment4.params=num
+comment4.target=int\ saveSpotX(int)
+comment5.params=num
+comment5.target=int\ saveSpotY(int)
+comment6.params=x\ y\ num
+comment6.target=boolean\ isSolid(int,\ int,\ int)
+numComments=7
