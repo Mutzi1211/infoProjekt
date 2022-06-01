@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=Box
+comment1.params=v_velx\ v_vely
+comment1.target=void\ Setspeed(double,\ double)
+comment1.text=\r\n\ Change\ speed\ when\ player\ touches\ box\r\n
+comment2.params=
+comment2.target=void\ Controlspeed()
+comment2.text=\r\n\ Control\ speed\r\n
+comment3.params=
+comment3.target=void\ Collision()
+comment3.text=\r\n\ Test\ for\ collision\r\n
+comment4.params=
+comment4.target=void\ act()
+comment4.text=\r\n\ Act\ -\ do\ whatever\ the\ Ground\ wants\ to\ do.\ This\ method\ is\ called\ whenever\r\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\r\n
+numComments=5
