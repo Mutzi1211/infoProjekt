@@ -1,4 +1,8 @@
 # infoProjekt
 
-hab ich mal angelegt
-keine ahnung wie hier alles genau geht aber wird schon
+to do:
+
+20x20 leeres png
+
+Wand andere Färbung um 3D Effekt zu erzeugen
+
