@@ -2,8 +2,9 @@
 
 to do: 
 
-regenbogen op player
+---
 
-r autospam
+Projekt wurde mit einer 1.0 abgeben
+o7
 
 
