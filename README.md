@@ -1,8 +1,9 @@
 # infoProjekt
 
-to do:
+to do: 
 
-20x20 leeres png
+regenbogen op player
 
-Wand andere Färbung um 3D Effekt zu erzeugen
+r autospam
+
 

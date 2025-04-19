@@ -15,15 +15,35 @@ public class Geschoss extends Objects
     public boolean dir;
     private CaveMan m_World;
     int wnum;
+    private int remove = 0;
 
-    public Geschoss(boolean move_right, int num){
+    public Geschoss(boolean move_right, int num, CaveMan cave_world){
         dir = move_right;
         wnum = num;
+        m_World = cave_world;
+    }
+
+    private void ColWithEnemy()
+    {
+        Actor Enemy = getOneObjectAtOffset(10, 0, Enemy.class);
+        Actor Enemy2 = getOneObjectAtOffset(-10,0 , Enemy.class);
+        Actor Enemy3= getOneObjectAtOffset(10, -9, Enemy.class);
+        Actor Enemy4= getOneObjectAtOffset(-10, -9, Enemy.class);
+
+        if (Enemy != null || Enemy2 != null || Enemy3 != null || Enemy4 != null)
+        {
+            this.getWorld().removeObject(Enemy);
+            this.getWorld().removeObject(Enemy2);
+            this.getWorld().removeObject(Enemy3);
+            this.getWorld().removeObject(Enemy4);
+            remove = 1;
+        }
     }
 
     public void act()
     {
-        Collision1();
+        Collision();
+        ColWithEnemy();
         if (dir){
             this.move(10);
         }
@@ -31,39 +51,24 @@ public class Geschoss extends Objects
             this.move(-10);
         }
         if(this.isAtEdge()){
+            remove = -1;
+        }
+        if(remove == 1){
+            m_World.removeE(wnum, getY());
             this.getWorld().removeObject(this);
+            remove = 0;
+        }
+        if(remove == -1){
+            this.getWorld().removeObject(this);
+            remove = 0;
         }
     }
 
-    void Collision1(){
-        if (dir)  // wenn Bewegung nach rechts
-        {
-            Actor Box = getOneObjectAtOffset(10, 0, Box.class);
+    void Collision(){
 
-            if (Box != null) //etwas im Weg
-            {
-                // this.getWorld().removeObject(this);
-            }
-            else        // nix im Weg
-            {
-
-            }
-
+        if(getIntersectingObjects(Tile.class).size() != 0){
+            remove = -1;
         }
-        else
-        if (!dir)        // alles nochmal für Bewegung nach links
-        {
 
-            Actor Box = getOneObjectAtOffset(-10, 0, Box.class);
-
-            if (Box != null) //etwas im Weg
-            {
-                this.getWorld().removeObject(this);
-            }
-            else
-            {
-
-            }
-        }
     }
 }
